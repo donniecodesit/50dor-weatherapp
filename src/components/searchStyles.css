@@ -22,7 +22,6 @@ body {
   display: grid;
   place-items: center;
   align-items: flex-start;
-  margin-top: 200px;
 }
 
 .widget {
