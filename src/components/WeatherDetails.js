@@ -23,7 +23,7 @@ function WeatherDetails({
     // Identify the timezone and set the current time accordingly.
     async function updateAreaInformation() {
       try {
-        let url = `http://api.timezonedb.com/v2.1/get-time-zone?key=${process.env.REACT_APP_TZDBAPIKEY}&format=json&by=position&lat=${lat}&lng=${lon}`;
+        let url = `https://api.timezonedb.com/v2.1/get-time-zone?key=${process.env.REACT_APP_TZDBAPIKEY}&format=json&by=position&lat=${lat}&lng=${lon}`;
         let result = await fetch(url);
         let data = await result.json();
 
